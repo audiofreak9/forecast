@@ -114,7 +114,7 @@ require_once('config.php');
 	var WUarea = '<?php echo $WUarea; ?>';
 	var v = '<?php echo $v; ?>';
 	var oset = 0;
-	var apikey = '<?php echo $DarkSkyAPIKey; ?>';
+	var apikey = '<?php echo $apikey; ?>';
 	//** Loading Skycon ********************************************
 	var skyconsL = new Skycons({"color": "#" + color});
 	skyconsL.add("icon-loading", "clear-day");
