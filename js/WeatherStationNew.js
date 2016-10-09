@@ -54,7 +54,6 @@ function loadData(positionLatLng) {
 	var minus1 = ISODateString(date);
 	date.setDate(date.getDate() - 1);
 	var minus2 = ISODateString(date);
-	var apikey = "88bcfda3d45a0238f96e6b702f440978";
 	$.when(
 		$.ajax({
 			url: "https://api.darksky.net/forecast/" + apikey + "/" + positionLatLng + "," + minus1 + "?extend=hourly&units=us&callback=?",

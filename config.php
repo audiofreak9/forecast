@@ -1,4 +1,5 @@
 <?php
+$apikey = 'YourDarkSkyAPIKey';
 if (($v) && ($v != "l")) $v = "";
 $timeColor = ($v) ?  "EEE" : "222";
 $bgcolor = ($v) ?  "FFF" : "000";
