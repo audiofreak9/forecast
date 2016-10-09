@@ -1,14 +1,6 @@
 <?php
 extract($_GET);
-//Set Defaults
-if (($v) && ($v != "l")) $v = "";
-$timeColor = ($v) ?  "EEE" : "222";
-$bgcolor = ($v) ?  "FFF" : "000";
-$color = ($v) ?  "B4B4B4" : "ABABAB";
-$IOcolor = ($v) ?  "333333" : "ABABAB";
-if (!$Lat) $Lat = "39.0877";
-if (!$Lng) $Lng = "-74.8413";
-if (!$WUarea) $WUarea = "Cape May Court House, NJ";
+require_once('config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,6 +114,7 @@ if (!$WUarea) $WUarea = "Cape May Court House, NJ";
 	var WUarea = '<?php echo $WUarea; ?>';
 	var v = '<?php echo $v; ?>';
 	var oset = 0;
+	var DarkSkyKey = '<?php echo $DarkSkyKey; ?>';
 	//** Loading Skycon ********************************************
 	var skyconsL = new Skycons({"color": "#" + color});
 	skyconsL.add("icon-loading", "clear-day");
