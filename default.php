@@ -106,7 +106,7 @@ if (!$WUarea) $WUarea = "Cape May Court House, NJ";
 		<div id="footer2" class="clear Ogray"><br />Powered by: <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a> | Inspired by <a href="http://ecobee.com">ecobee<sub>3</sub></a></div>
 	</div>
 </body>
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/highcharts.js"></script>
 <script type="text/javascript" src="js/highcharts-more.js"></script>
 <script type="text/javascript" src="js/solid-gauge.src.js"></script>
